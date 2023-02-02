@@ -1,5 +1,9 @@
+import java.security.Provider.Service;
+
 import Controller.SocialMediaController;
+import Service.SocialMediaService;
 import io.javalin.Javalin;
+
 
 /**
  * This class is provided with a main method to allow you to manually run and test your application. This class will not
@@ -10,5 +14,7 @@ public class Main {
         SocialMediaController controller = new SocialMediaController();
         Javalin app = controller.startAPI();
         app.start(8080);
+
+        
     }
 }
